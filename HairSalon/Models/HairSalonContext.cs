@@ -1,17 +1,17 @@
-// using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 
-// namespace ToDoList.Models
-// {
-//   public class ToDoListContext : DbContext
-//   {
-//     public DbSet<Category> Categories { get; set; }
-//     public DbSet<Item> Items { get; set; }
+namespace HairSalon.Models
+{
+  public class HairSalonContext : DbContext
+  {
+    public DbSet<Stylist> Stylists { get; set; }
+    public DbSet<Client> Clients { get; set; }
 
-//     public ToDoListContext(DbContextOptions options) : base(options) { }
+    public HairSalonContext(DbContextOptions options) : base(options) { }
 
-//     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-//     {
-//       optionsBuilder.UseLazyLoadingProxies();
-//     }
-//   }
-// }
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    {
+      optionsBuilder.UseLazyLoadingProxies();
+    }
+  }
+}
