@@ -1,16 +1,18 @@
-// using System.Collections.Generic;
+using System.Collections.Generic;
 
-// namespace ToDoList.Models
-// {
-//     public class Category
-//     {
-//         public Category()
-//         {
-//             this.Items = new HashSet<Item>();
-//         }
+namespace HairSalon.Models
+{
+    public class Stylist
+    {
+        public Stylist()
+        {
+            this.Clients = new HashSet<Client>();
+        }
 
-//         public int CategoryId { get; set; }
-//         public string Name { get; set; }
-//         public virtual ICollection<Item> Items { get; set; }
-//     }
-// }
+        public int StylistId { get; set; }
+        public string Name { get; set; }
+        public string Speciality { get; set; }
+        
+        public virtual ICollection<Client> Client { get; set; }
+    }
+}
