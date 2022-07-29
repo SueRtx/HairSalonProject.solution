@@ -16,5 +16,12 @@
   
   <input type="submit" value="Add new stylist" />
 }
+
+@using (Html.BeginForm("Index", "Stylists", FormMethod.Get))
+  {
+    <input type="submit" value="Show all Stylists" class="btn btn-success">
+  }
+
+
 <p>@Html.ActionLink("Show all stylists", "Index")</p>
 <p>@Html.ActionLink("Return Home", "Index", "Home")</p>
