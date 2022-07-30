@@ -2,25 +2,31 @@
   Layout = "_Layout";
 }
 
-@model HairSalon.Models.Stylist
+<div class="container">
+  <h1 class="title"><strong>EAU CLAIRE'S SALON</strong></h1>
+  <h2>Edit Stylist</h2>
 
-<h2>Edit</h2>
+  <div class="infoBox">
+    @model HairSalon.Models.Stylist
 
-<h4>Edit this stylist: @Html.DisplayFor(model => model.Name)</h4>
+    <h4><strong>Stylist Name: @Html.DisplayFor(model => model.Name)</strong></h4>
 
-@using (Html.BeginForm())
-{
-  @Html.HiddenFor(model => model.StylistId)
+    @using (Html.BeginForm())
+    {
+      @Html.HiddenFor(model => model.StylistId)
 
-  @Html.LabelFor(model => model.Name)
-  @Html.EditorFor(model => model.Name)
+      <p> @Html.LabelFor(model => model.Name)
+      @Html.EditorFor(model => model.Name)</p>
 
-  @Html.LabelFor(model => model.Specialty)
-  @Html.EditorFor(model => model.Specialty)
+      <p>@Html.LabelFor(model => model.Specialty)  
+      @Html.EditorFor(model => model.Specialty)</p>
 
-  @Html.LabelFor(model => model.DateHired)
-  @Html.EditorFor(model => model.DateHired)
+      <p>@Html.LabelFor(model => model.DateHired) 
+      @Html.EditorFor(model => model.DateHired)</p>
 
-  <input type="submit" value="Save" />
-}
-<p>@Html.ActionLink("Back to stylist", "Index")</p>
+      <input type="submit" value="Save" id="btn" >
+    }
+
+    <h4 id="sideLink">@Html.ActionLink("Cancel", "Index")</h4>
+  </div>
+</div>

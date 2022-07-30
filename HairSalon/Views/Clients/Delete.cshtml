@@ -2,6 +2,11 @@
   Layout = "_Layout";
 }
 
+<div class="container">
+  <h1 class="title"><strong>EAU CLAIRE'S SALON</strong></h1>
+  <h2><strong>Delete Client</strong></h2>
+
+  <div class="infoBox">
 @model HairSalon.Models.Client
 
 <h2>Are you sure you want to delete this client?</h2>
@@ -9,6 +14,9 @@
 @Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)
 @using (Html.BeginForm())
 {
-  <input type="submit" value="Delete" />
+  <input type="submit" value="Delete" id="btn3" />
 }
-@Html.ActionLink("Back to Clients", "Index")
+
+  </div>
+  <h4 id="centerLink">@Html.ActionLink("Cancel", "Index")</h4>
+</div>

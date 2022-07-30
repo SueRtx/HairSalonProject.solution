@@ -2,26 +2,34 @@
   Layout = "_Layout";
 }
 
-@model HairSalon.Models.Stylist
-
-<h4>Add a new stylist</h4>
-@using (Html.BeginForm())
-{
-  @Html.LabelFor(model => model.Name)
-  @Html.TextBoxFor(model => model.Name)
-  @Html.LabelFor(model => model.Specialty)
-  @Html.TextBoxFor(model => model.Specialty)
-  @Html.LabelFor(model => model.DateHired)
-  @Html.TextBoxFor(model => model.DateHired)
+<div class="container">
+  <h1 class="title"><strong>EAU CLAIRE'S SALON</strong></h1>
+  <h2>Add Stylist</h2>
   
-  <input type="submit" value="Add new stylist" />
-}
+  <div class="infoBox">
+    @model HairSalon.Models.Stylist
+    @using (Html.BeginForm())
+    {
+      <p>@Html.Label("Name:") 
+      <input id="stylistName" name="Name" type="text" required></p>
 
-@using (Html.BeginForm("Index", "Stylists", FormMethod.Get))
-  {
-    <input type="submit" value="Show all Stylists" class="btn btn-success">
-  }
+      <p>@Html.LabelFor(model => model.Specialty): 
+      @Html.TextBoxFor(model => model.Specialty)</p>
+
+      <p>@Html.Label("Hired Date:") 
+      <input id="hieredDate" name="DateHired" type="date" required></p>
+
+      <input type="submit" value="Add Stylist" id="btn" />
+    }
 
 
-<p>@Html.ActionLink("Show all stylists", "Index")</p>
-<p>@Html.ActionLink("Return Home", "Index", "Home")</p>
+
+    @* @using (Html.BeginForm("Index", "Stylists", FormMethod.Get))
+      {
+        <input type="submit" value="Show all Stylists" id="btn">
+      } *@
+
+  </div>
+  <h4 id="addStylistLink">@Html.ActionLink("Show All Stylists", "Index")</h4>
+  <h4 id="rightSideLink">@Html.ActionLink("Return Home", "Index", "Home")</h4>
+</div>

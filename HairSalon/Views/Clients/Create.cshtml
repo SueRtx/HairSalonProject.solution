@@ -1,25 +1,26 @@
 @{
   Layout = "_Layout";
 }
+<div class="container">
+  <h1 class="title"><strong>EAU CLAIRE'S SALON</strong></h1>
+  <h2>Add New Client</h2> 
 
-@model HairSalon.Models.Client
+  <div class="infoBox">
+    @model HairSalon.Models.Client
+    @using (Html.BeginForm())
+    {
+      <p>Client's @Html.LabelFor(model => model.Stylist)
+      @Html.DropDownList("StylistId")</p>
 
-<h4>Add a new client</h4>
+      <p>@Html.Label("Name:") 
+      <input id="clientName" name="Name" type="text" required></p>
+      
+      <p>@Html.LabelFor(model => model.PhoneNumber)
+      @Html.TextBoxFor(model => model.PhoneNumber)</p>
 
-@using (Html.BeginForm())
-{
-  @Html.LabelFor(model => model.Name)
-  @Html.TextBoxFor(model => model.Name)
-  @Html.LabelFor(model => model.PhoneNumber)
-  @Html.TextBoxFor(model => model.PhoneNumber)
+      <input type="submit" value="submit" id="btn" />
+    }
 
-  @Html.LabelFor(model => model.Stylist)
-  @Html.DropDownList("StylistId")
-
-  <input type="submit" value="Add new client" class="btn btn-default" />
-}
-
-
-
-@* <p>@Html.ActionLink("Show all Stylists", "Index", "Stylists" )</p>
-<p>@Html.ActionLink("Return Home", "Index", "Home")</p> *@
+    <h4 id="sideLink">@Html.ActionLink("Cancel", "Index", "Stylists" )</h4>
+  </div>
+</div>

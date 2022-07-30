@@ -2,20 +2,21 @@
   Layout = "_Layout";
 }
 
-@model HairSalon.Models.Client
+<div class="container">
+  <h1 class="title"><strong>EAU CLAIRE'S SALON</strong></h1>
+  <h2><strong>Client Details</strong></strong></h2>
 
-<h2>Client Details</h2>
-<hr />
+  <div class="infoBox">
+    @model HairSalon.Models.Client
 
-<h3>@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)<h3>
-<h3>@Html.DisplayNameFor(model => model.PhoneNumber): @Html.DisplayFor(model => model.PhoneNumber)<h3>
+    <h3><strong>@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)</strong></h3>
+    <h3><strong>@Html.DisplayNameFor(model => model.PhoneNumber): @Html.DisplayFor(model => model.PhoneNumber)</strong></h3>
+    <h3><strong>Stylist @Html.DisplayNameFor(model => model.Stylist.Name): @Html.DisplayFor(model => model.Stylist.Name)</strong></h3>
+  </div>
 
-<h3>@Html.DisplayNameFor(model => model.Stylist.Name): @Html.DisplayFor(model => model.Stylist.Name)<h3>
+  <h4 id="addStylistLink">@Html.ActionLink("Edit Client", "Edit", new { id = Model.ClientId })</h4>
+  <h4 id="rightSideLink">@Html.ActionLink("Delete Client", "Delete", new { id = Model.ClientId })</h4>
 
-
-
-
-<p>@Html.ActionLink("Edit Client", "Edit", new { id = Model.ClientId })</p>
-<p>@Html.ActionLink("Delete Client", "Delete", new { id = Model.ClientId })</p>
-<p>@Html.ActionLink("Back To Stylists", "Index", "Stylists")</p>
-<p>@Html.ActionLink("Back Home", "Index", "Home")</p>
+  <h4 id="addStylistLink">@Html.ActionLink("Back To Clients", "Index")</h4>
+  <h4 id="rightSideLink">@Html.ActionLink("Back Home", "Index", "Home")</h4>
+</div> 
