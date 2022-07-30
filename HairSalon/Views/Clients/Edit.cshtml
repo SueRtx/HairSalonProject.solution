@@ -9,7 +9,7 @@
   <div class="infoBox">
     @model HairSalon.Models.Client
 
-    <h4>Client Name: @Html.DisplayFor(model => model.Name)</h4>
+    @* <h4>Client Name: @Html.DisplayFor(model => model.Name)</h4> *@
 
     @using (Html.BeginForm())
     {
@@ -26,6 +26,6 @@
       <h4><input type="submit" value="Save"  id="btn"></h4>
     }
       
-    <h4 id="sideLink">@Html.ActionLink("Cancel", "Index")</h4>
+    @* <h4 id="sideLink">@Html.ActionLink("Cancel","Index")</h4> *@
   </div>
 </div>

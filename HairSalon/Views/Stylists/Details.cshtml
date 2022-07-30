@@ -14,26 +14,24 @@
     @Html.DisplayNameFor(model => model.Specialty): @Html.DisplayFor(model => model.Specialty) *
     @Html.DisplayNameFor(model => model.DateHired): @Html.DisplayFor(model => model.DateHired)</strong></h3>
 
-    <h3>*Client List*</h3>
+    <h4>*Client List*</h4>
 
-    @* @if(Model.Clients.Count == 0)
+    @if(Model.Clients.Count == 0)
     {
-      <h5>No clients have been added yet!</h5>
-    } *@
+      <h4>No clients have been added yet!</h4>
+    }
     <ul>
       @foreach (Client client in Model.Clients)
       {
-        @* <li>@Html.ActionLink($"{client.Name}", "Details", "Client", new { id = client.ClientId })</li> *@
-
-        <li>@client.Name</li>
+        <li>@Html.ActionLink($"{client.Name}", "Details", "Clients", new { id = client.ClientId })</li>
       }
     </ul>
   </div>
+
   <h4 id="addStylistLink">@Html.ActionLink("Edit Stylist", "Edit", new { id = Model.StylistId })</h4>
   <h4 id="rightSideLink">@Html.ActionLink("Delete Stylist", "Delete", new { id = Model.StylistId })</h4>
 
 
-  <h4 id="addStylistLink">@Html.ActionLink("Add Client", "Index", "Clients",new { id = Model.StylistId})</h4> 
-
+  <h4 id="addStylistLink">@Html.ActionLink("Add Client", "Create", "Clients",new { id = Model.StylistId})</h4> 
   <h4 id="rightSideLink">@Html.ActionLink("Back to Stylist", "Index")</h4>
 </div>

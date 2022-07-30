@@ -1,16 +1,17 @@
 @{
   Layout = "_Layout";
 }
+
 <div class="container">
   <h1 class="title"><strong>EAU CLAIRE'S SALON</strong></h1>
   <h2>Add New Client</h2> 
 
   <div class="infoBox">
     @model HairSalon.Models.Client
+ 
     @using (Html.BeginForm())
     {
-      <p>Client's @Html.LabelFor(model => model.Stylist)
-      @Html.DropDownList("StylistId")</p>
+      <input type="hidden" id="StylistId" name="StylistId" value="@ViewBag.StylistId"/>
 
       <p>@Html.Label("Name:") 
       <input id="clientName" name="Name" type="text" required></p>
@@ -18,9 +19,10 @@
       <p>@Html.LabelFor(model => model.PhoneNumber)
       @Html.TextBoxFor(model => model.PhoneNumber)</p>
 
-      <input type="submit" value="submit" id="btn" />
+      <input type="submit" value="Add" id="btn2" />
     }
 
-    <h4 id="sideLink">@Html.ActionLink("Cancel", "Index", "Stylists" )</h4>
+    <h4 id="sideLink2">@Html.ActionLink("Cancel", "Index", "Stylists" )</h4>
   </div>
-</div>
+</div> 
+
