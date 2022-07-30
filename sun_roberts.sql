@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 8.0.29, for Win64 (x86_64)
 --
--- Host: localhost    Database: hair_salon
+-- Host: localhost    Database: sun_roberts
 -- ------------------------------------------------------
 -- Server version	8.0.29
 
@@ -28,8 +28,17 @@ CREATE TABLE `clients` (
   `PhoneNumber` varchar(255) DEFAULT NULL,
   `StylistId` int DEFAULT '0',
   PRIMARY KEY (`ClientId`)
-) ENGINE=InnoDB AUTO_INCREMENT=75 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `clients`
+--
+
+LOCK TABLES `clients` WRITE;
+/*!40000 ALTER TABLE `clients` DISABLE KEYS */;
+/*!40000 ALTER TABLE `clients` ENABLE KEYS */;
+UNLOCK TABLES;
 
 --
 -- Table structure for table `stylists`
@@ -44,8 +53,17 @@ CREATE TABLE `stylists` (
   `Specialty` varchar(255) DEFAULT NULL,
   `DateHired` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`StylistId`)
-) ENGINE=InnoDB AUTO_INCREMENT=42 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `stylists`
+--
+
+LOCK TABLES `stylists` WRITE;
+/*!40000 ALTER TABLE `stylists` DISABLE KEYS */;
+/*!40000 ALTER TABLE `stylists` ENABLE KEYS */;
+UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -56,4 +74,4 @@ CREATE TABLE `stylists` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-07-30 16:09:44
+-- Dump completed on 2022-07-30 16:34:34
