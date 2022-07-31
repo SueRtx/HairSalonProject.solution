@@ -1,4 +1,4 @@
-# Eau Claire's Salon (C# Project #3)
+# Eau Claire's Salon (C# Project 3)
 
 #### By Sue Roberts
 
@@ -24,15 +24,15 @@ When the employer runs this application, they are able to see a list of all styl
 
 * Clone repository: $ git clone https://github.com/SueRtx/HairSalonProject.solution.git  
     
-* Download MySQL WorkBench
-* Open MySQL WorkBench
-* Importing [sun_roberts.sql] from HairSalon.Solution   
-  -Administration window → Data Import/Restore   
-  -Import Options → Import from Self-Contained File
-  (Use [sue_roberts.sql] from [HairSalon.Solution])  
-  -Import Progress → Start Import  
-  -Reopen the Navigator → Schemas tab → Right click → Refresh All   
-    
+* Download MySQL WorkBench  
+* Open MySQL WorkBench  
+* Importing [sun_roberts.sql] from HairSalon.Solution     
+  - Administration window → Data Import/Restore     
+  - Import Options → Import from Self-Contained File    
+    (Use [sue_roberts.sql] from [HairSalon.Solution])  
+  - Import Progress → Start Import    
+  - Reopen Navigator → Schemas tab → Right click → Refresh All   
+
 * Navigate to "HairSalonProject.solution": $ cd HairSalonProject.solution
 * Open Vs Code: $ code 
 * Open TERMINAL in Vs Code
