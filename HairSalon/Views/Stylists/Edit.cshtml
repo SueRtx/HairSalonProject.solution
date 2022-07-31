@@ -4,13 +4,10 @@
 
 <div class="container">
   <h1 class="title"><strong>EAU CLAIRE'S SALON</strong></h1>
-  <h2>Edit Stylist</h2>
+  <h2><strong>Edit Stylist</strong></h2>
 
   <div class="infoBox">
     @model HairSalon.Models.Stylist
-
-    @* <h4><strong>Stylist Name: @Html.DisplayFor(model => model.Name)</strong></h4> *@
-
     @using (Html.BeginForm())
     {
       @Html.HiddenFor(model => model.StylistId)
