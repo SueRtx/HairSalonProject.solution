@@ -7,17 +7,19 @@
   <h2><strong>Delete Client</strong></h2>
 
   <div class="infoBox">
-@model HairSalon.Models.Client
+    @model HairSalon.Models.Client
 
-<h2>Are you sure you want to delete this client?</h2>
+    <h4>Are you sure you want to <strong>DELETE</strong> this client?</h4>
 
-@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)
-@using (Html.BeginForm())
-{
-  <input type="submit" value="Delete" id="btn3" />
-}
-
+    <h5></strong>Client @Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)</strong></h5>
   </div>
-  <h4 id="centerLink">@Html.ActionLink("Cancel", "Index", "Stylists")</h4>
+
+  @using (Html.BeginForm())
+  {
+    <input type="submit" value="Delete" id="btn3" />
+  }
+  
+  <h4 id="deleteLink">@Html.ActionLink("Cancel", "Index", "Stylists")</h4>
+  
 </div>
 

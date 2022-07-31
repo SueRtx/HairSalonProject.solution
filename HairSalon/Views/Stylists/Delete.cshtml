@@ -9,14 +9,16 @@
   <div class="infoBox">
     @model HairSalon.Models.Stylist
 
-    <h4><strong>Are you sure you want to delete this stylist?</strong></h4>
+    <h4>Are you sure you want to <strong>DELETE</strong> this stylist?</h4>
 
-    <strong>@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)</strong>
-    @using (Html.BeginForm())
-    {
-      <input type="submit" value="Delete" id="btn3" />
-    }
+    <h5><strong>Stylist @Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)</strong></h5>
   </div>
+
+  @using (Html.BeginForm())
+  {
+    <input type="submit" value="Delete" id="btn3" />
+  }
   
-  <h4 id="centerLink">@Html.ActionLink("Cancel", "Index")</h4>
+  <h4 id="deleteLink">@Html.ActionLink("Cancel", "Index")</h4>
+  
 </div>

@@ -4,7 +4,7 @@
 
 <div class="container">
   <h1 class="title"><strong>EAU CLAIRE'S SALON</strong></h1>
-  <h2><strong>Client Details</strong></strong></h2>
+  <h2><strong>Client Details</strong></h2>
 
   <div class="infoBox">
     @model HairSalon.Models.Client
@@ -14,9 +14,9 @@
     <h3><strong>Stylist @Html.DisplayNameFor(model => model.Stylist.Name): @Html.DisplayFor(model => model.Stylist.Name)</strong></h3>
   </div>
 
-  <h4 id="addStylistLink">@Html.ActionLink("Edit Client", "Edit", new { id = Model.ClientId })</h4>
+  <h4 id="leftSidetLink">@Html.ActionLink("Edit Client", "Edit", new { id = Model.ClientId })</h4>
   <h4 id="rightSideLink">@Html.ActionLink("Delete Client", "Delete", new { id = Model.ClientId })</h4>
 
-  <h4 id="addStylistLink">@Html.ActionLink("Back To Stylists", "Index", "Stylists")</h4>
+  <h4 id="leftSidetLink">@Html.ActionLink("Back To Stylists", "Index", "Stylists")</h4>
   <h4 id="rightSideLink">@Html.ActionLink("Back Home", "Index", "Home")</h4>
 </div> 
