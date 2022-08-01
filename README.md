@@ -35,7 +35,7 @@ When the employer runs this application, they are able to see a list of all styl
 * Open Vs Code: $ code .   
 * Open TERMINAL in Vs Code
 * Go to HairSalon directory: $ cd HairSalon
-* Create folder: $ cd "appsettings.json"
+* Create folder: $ touch "appsettings.json"
 * Add following code to "appsettings.json" (Add your own password)
 ```
 {
