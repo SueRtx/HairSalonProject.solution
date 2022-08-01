@@ -23,7 +23,6 @@ When the employer runs this application, they are able to see a list of all styl
 ## Setup/Installation Requirements
 
 * Clone repository: $ git clone https://github.com/SueRtx/HairSalonProject.solution.git  
-    
 * Download MySQL WorkBench  
 * Open MySQL WorkBench  
 * Importing [sun_roberts.sql] from HairSalon.Solution     
@@ -32,13 +31,12 @@ When the employer runs this application, they are able to see a list of all styl
     (Use [sue_roberts.sql] from [HairSalon.Solution])  
   - Import Progress → Start Import    
   - Reopen Navigator → Schemas tab → Right click → Refresh All   
-
-* Navigate to "HairSalonProject.solution": $ cd HairSalonProject.solution
-* Open Vs Code: $ code 
+* Navigate to "HairSalonProject.solution"    
+  - Open Vs Code: $ cd HairSalonProject.solutionOpen → $ code .   
 * Open TERMINAL in Vs Code
 * Go to HairSalon directory:  $ cd HairSalon
 * Create folder:  $ cd "appsettings.json"
-* Add following code to "appsettings.json"
+* Add following code to "appsettings.json" (Add your own password)
 ```
 {
   "ConnectionStrings": {
@@ -47,7 +45,7 @@ When the employer runs this application, they are able to see a list of all styl
 }
 
 ```  
-* Run Program: Go to terminal → $ dotnet build → $ dotnet run  
+* Run Program: Go to terminal  → $ dotnet restore → $ dotnet build → $ dotnet run  
 * Open web browser: http://localhost:5000/  
 
 ## Known Bugs
