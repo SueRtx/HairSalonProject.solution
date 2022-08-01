@@ -31,11 +31,11 @@ When the employer runs this application, they are able to see a list of all styl
     (Use [sue_roberts.sql] from [HairSalon.Solution])  
   - Import Progress → Start Import    
   - Reopen Navigator → Schemas tab → Right click → Refresh All   
-* Navigate to "HairSalonProject.solution"    
-  - Open Vs Code: $ cd HairSalonProject.solutionOpen → $ code .   
+* Navigate to "HairSalonProject.solution": $ cd HairSalonProject.solution   
+* Open Vs Code: $ code .   
 * Open TERMINAL in Vs Code
-* Go to HairSalon directory:  $ cd HairSalon
-* Create folder:  $ cd "appsettings.json"
+* Go to HairSalon directory: $ cd HairSalon
+* Create folder: $ cd "appsettings.json"
 * Add following code to "appsettings.json" (Add your own password)
 ```
 {
