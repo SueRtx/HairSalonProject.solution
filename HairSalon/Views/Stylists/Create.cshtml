@@ -18,11 +18,11 @@
       @Html.TextBoxFor(model => model.Specialty)</p>
 
       <p>@Html.Label("Hired Date:") 
-      <input id="hieredDate" name="DateHired" type="date" required></p>
-
+      @Html.TextBoxFor(model => model.DateHired, "{0:d MMM yyyy}", new { @class="input-large", type = "datetime-local"})</p>
+      
       <input type="submit" value="Add Stylist" id="btn2" />
     }
   </div>
-    <h4 id="leftSidetLink">@Html.ActionLink("Show All Stylists", "Index")</h4>
+    <h4 id="leftSidetLink">@Html.ActionLink("Stylist List", "Index")</h4>
     <h4 id="rightSideLink">@Html.ActionLink("Return Home", "Index", "Home")</h4>
 </div>

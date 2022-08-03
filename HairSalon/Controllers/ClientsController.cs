@@ -18,10 +18,10 @@ namespace HairSalon.Controllers
 
     public ActionResult Create(int id)
     {
-      ViewBag.PageTitle = "Add Appt.";
       ViewBag.StylistId = id;
       return View();
     }
+
     [HttpPost]
     public ActionResult Create(Client client)
     {

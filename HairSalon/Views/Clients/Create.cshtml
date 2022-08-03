@@ -15,9 +15,10 @@
 
       <p>@Html.Label("Name:") 
       <input id="clientName" name="Name" type="text" required></p>
-      
+
       <p>@Html.LabelFor(model => model.PhoneNumber)
-      @Html.TextBoxFor(model => model.PhoneNumber)</p>
+        <input type="tel" id="phone" name="PhoneNumber"  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required></p>
+        <h7>Use this Formet: 111-222-3333</h7>
 
       <input type="submit" value="Add" id="btn2" />
     }

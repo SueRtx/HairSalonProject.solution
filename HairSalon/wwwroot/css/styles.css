@@ -1,7 +1,6 @@
 body {
   background-color: rgb(244, 208, 220);
   font-family: Georgia, 'Times New Roman', Times, serif;
-  text-shadow: 1px 1px 1px rgb(94, 10, 45);
 }
 
 .title {
@@ -16,6 +15,7 @@ input {
   float: right;
   margin-right: 40%;
   text-align: center;
+  font-family: Arial;
   font-weight: bold;
   color: #136373;
   border: 5px solid rgb(242, 94, 146);
@@ -62,7 +62,8 @@ h4 {
   color: rgb(246, 30, 109);
   margin-top: -10%;
   width: 28%;
-  background-color: rgb(216, 236, 150);  
+  background-color: rgb(216, 236, 150);
+  font-family: Arial;
 }
 
 #sideLink2 {
@@ -75,7 +76,8 @@ h4 {
   color: rgb(8, 76, 93);
   margin-top: -8%;
   width: 28%;
-  background-color: rgb(216, 236, 150);  
+  background-color: rgb(216, 236, 150); 
+  font-family: Arial;
 }
 
 #btn {
@@ -127,6 +129,14 @@ h4 {
   font-weight: bold;
 }
 
+h7 {
+  font-family: Arial;
+  margin-left: 26%;
+  margin-top: -12% ;
+  font-size: 17px;
+  color: rgb(79, 60, 242);
+}
+
 #leftSidetLink {
   float: left;
   margin-left: 5%;
@@ -135,7 +145,8 @@ h4 {
   margin-top: 2%;
   width:40%;
   text-align: center;
-  background-color: rgb(236, 224, 146);   
+  background-color: rgb(236, 224, 146); 
+  font-family: Arial;
 }
 
 #rightSideLink {
@@ -146,7 +157,8 @@ h4 {
   margin-top: 2%;
   text-align: center;
   width:40%;
-  background-color: rgb(236, 224, 146);  
+  background-color: rgb(236, 224, 146);
+  font-family: Arial;
 }
 
 #deleteLink {
@@ -157,6 +169,7 @@ h4 {
   margin-top: -6%;
   text-align: center;
   width:40%;
-  background-color: rgb(236, 224, 146);  
+  background-color: rgb(236, 224, 146);
+  font-family: Arial;
 }
 
