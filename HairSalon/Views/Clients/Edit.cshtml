@@ -11,10 +11,13 @@
     @using (Html.BeginForm())
     {
       @Html.HiddenFor(model => model.ClientId)
+
       <p>Client @Html.LabelFor(model => model.Name)
-      @Html.EditorFor(model => model.Name)</p>
+      @Html.EditorFor(model => model.Name)</p
+      >
       <p>@Html.LabelFor(model => model.PhoneNumber)
       @Html.EditorFor(model => model.PhoneNumber) </p>
+      
       <p>@Html.LabelFor(model => model.Stylist)
       @Html.DropDownList("StylistId")</p>
 
