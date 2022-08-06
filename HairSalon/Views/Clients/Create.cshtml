@@ -14,7 +14,7 @@
       <input type="hidden" id="StylistId" name="StylistId" value="@ViewBag.StylistId"/>
 
       <p>@Html.Label("Name:") 
-      <input id="clientName" name="Name" type="text" required></p>
+      @Html.TextBoxFor(model => model.Name, new { required = "required" })</p>
 
       <p>@Html.LabelFor(model => model.PhoneNumber)
         <input type="tel" id="phone" name="PhoneNumber"  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required></p>
