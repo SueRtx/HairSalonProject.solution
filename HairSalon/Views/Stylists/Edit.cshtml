@@ -13,13 +13,13 @@
       @Html.HiddenFor(model => model.StylistId)
 
       <p> @Html.LabelFor(model => model.Name)
-      @Html.EditorFor(model => model.Name)</p>
+      @Html.EditorFor(model => model.Name, new { required = "required" })</p>
 
       <p>@Html.LabelFor(model => model.Specialty)  
-      @Html.EditorFor(model => model.Specialty)</p>
+      @Html.EditorFor(model => model.Specialty, new { required = "required" })</p>
 
       <p>@Html.LabelFor(model => model.DateHired) 
-      @Html.EditorFor(model => model.DateHired)</p>
+      @Html.EditorFor(model => model.DateHired, new { required = "required", @type = "date" })</p>
 
       <input type="submit" value="Save" id="btn" >
     }

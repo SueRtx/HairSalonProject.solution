@@ -20,6 +20,10 @@
 
 When the employer runs this application, they are able to see a list of all stylists, add new stylists, hired dates, and add new clients to a specific stylist. They should not be able to add a client if no stylists have been added. The stylists page  includes their details and see a list of all clients that belong to that stylist. 
 
+## Home View
+![Home Index](HairSalon/wwwroot/images/salon.png "Home Index image")
+
+
 ## Setup/Installation Requirements
 
 * Clone repository: $ git clone https://github.com/SueRtx/HairSalonProject.solution.git  
